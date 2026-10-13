@@ -1,6 +1,8 @@
 name: Turnstile 签到测试 (GHA)
 
 on:
+  schedule:
+    - cron: '2 16 * * *'
   workflow_dispatch:
     inputs:
       accounts:
